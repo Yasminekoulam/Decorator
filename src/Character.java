@@ -1,4 +1,4 @@
 public interface Character {
-    int getStats();
+    int getCoins();
     String getDescription();
 }

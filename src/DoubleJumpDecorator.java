@@ -1,23 +1,20 @@
 public class DoubleJumpDecorator extends CharacterDecorator {
     private boolean purchased = false;
-
     public DoubleJumpDecorator(Character character) {
         super(character);
 
-        if (character.getStats() >= 30) {
+        if (character.getCoins() >= 30) {
             this.purchased = true;
         }
     }
-
     @Override
-    public int getStats() {
+    public int getCoins() {
         if (purchased) {
-            return super.getStats() - 30;
+            return super.getCoins() - 30;
         } else {
-            return super.getStats();
+            return super.getCoins();
         }
     }
-
     @Override
     public String getDescription() {
         if (purchased) {

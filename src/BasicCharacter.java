@@ -5,11 +5,9 @@ public class BasicCharacter implements Character {
     public void collectCoin() {
         coins += 1;
     }
-    public int getcoins() {
-        return coins;
-    }
+
     @Override
-    public int getStats() {
+    public int getCoins() {
         return coins;
     }
     @Override

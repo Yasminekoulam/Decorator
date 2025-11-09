@@ -6,8 +6,8 @@ public abstract class CharacterDecorator implements Character {
     }
 
     @Override
-    public int getStats() {
-        return character.getStats();
+    public int getCoins() {
+        return character.getCoins();
     }
     @Override
     public String getDescription() {

@@ -10,10 +10,10 @@ public class Main {
 
         System.out.println("__________COMBINAISON GUERRIER______________ ");
         System.out.println(guerrier.getDescription());
-        System.out.println("Stats: " + guerrier.getStats() +" coins");
+        System.out.println("Stats: " + guerrier.getCoins() +" coins");
 
         System.out.println("\n_________ COMBINAISON VOLEUR___________");
         System.out.println(voleur.getDescription());
-        System.out.println("Stats: " + voleur.getStats() +" coins");
+        System.out.println("Stats: " + voleur.getCoins() +" coins");
     }
 }

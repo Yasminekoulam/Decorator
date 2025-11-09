@@ -3,16 +3,16 @@ public class IceSwordDecorator extends CharacterDecorator {
 
     public IceSwordDecorator(Character character) {
         super(character);
-        if (character.getStats() >= 10) {
+        if (character.getCoins() >= 10) {
             this.purchased = true;
         }
     }
     @Override
-    public int getStats() {
+    public int getCoins() {
         if (purchased) {
-            return super.getStats() - 10;
+            return super.getCoins() - 10;
         } else {
-            return super.getStats();
+            return super.getCoins();
         }
     }
     @Override
